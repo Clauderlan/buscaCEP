@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/search.css">
+    <title>Via CEP - Resultado</title>
+</head>
+<body>
+    <nav>
+        <h1 id="dashboard">Via CEP</h1>
+    </nav>
+    <main>
+        <div id="painel">
+            <h2 id="painel-title">Verificando o CEP<br><%= data.cep %> </h2>
+            <section id="data-section">
+                <h3 class = "painel-info">Bairro</h3>
+                <h3 class="painel-answer"><%= data.bairro%></h3>
+
+                <h3 class = "painel-info">Logradouro</h3>
+                <h3 class="painel-answer"><%= data.logradouro%></h3>
+
+                <h3 class = "painel-info">Localidade</h3>
+                <h3 class="painel-answer"><%= data.localidade%></h3>
+
+                <h3 class = "painel-info">UF</h3>
+                <h3 class="painel-answer"><%= data.uf%></h3>
+
+                <h3 class = "painel-info">Complemento</h3>
+                <h3 class="painel-answer">
+                    <% if(data.complemento == ""){%>
+                        Não possui
+                    <% } else {%>
+                        <%= data.complemento %> 
+                    <% } %>   
+                </h3>
+            </section>
+            
+
+        </div>
+    </main>
+</body>
+</html>

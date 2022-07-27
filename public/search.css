@@ -1,0 +1,40 @@
+* {
+    list-style-type: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+#dashboard {
+    padding-top: 20px;
+    font-family: 'Courier New';
+    font-size: 2rem;
+    text-align: center;
+}
+#painel {
+    min-width: 200px;
+    max-width: 500px;
+    margin: 50px auto;
+}
+
+#painel-title{
+    font-size: 1.8rem;
+    font-family: 'Courier New';
+    text-align: center;
+}
+#data-section {
+    margin-top: 20px;
+}
+.painel-info {
+    text-align: center;
+    font-size: 2rem;
+    font-family: "Oswald";
+    padding-top: 20px;
+}
+
+.painel-answer {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Merriweather';
+}
